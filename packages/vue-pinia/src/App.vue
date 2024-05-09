@@ -1,30 +1,36 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import ProductList01 from "./components/ProductList01.vue";
+import ProductList02 from "./components/ProductList02.vue";
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="container">
+    <main>
+      <h2>Composition API</h2>
+      <ProductList01 />
+    </main>
+    <main>
+      <h2>Options API</h2>
+      <ProductList02 />
+    </main>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  padding: 26px;
+  border: 1px solid;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+main {
+  flex: 1;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+h2 {
+  text-align: left;
 }
 </style>

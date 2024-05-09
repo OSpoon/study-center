@@ -13,6 +13,10 @@
   "devDependencies": {
     "@antfu/ni": "^0.21.12",
     "@lerna-lite/cli": "^3.3.3",
-    "@lerna-lite/run": "^3.3.3"
+    "@lerna-lite/run": "^3.3.3",
+    "@types/mockjs": "^1.0.10"
+  },
+  "dependencies": {
+    "mockjs": "^1.1.0"
   }
 }
