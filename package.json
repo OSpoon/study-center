@@ -5,7 +5,8 @@
   "description": "",
   "scripts": {
     "dev:pinia": "lerna run dev --parallel --scope=vue-pinia",
-    "dev:router": "lerna run dev --parallel --scope=vue-router"
+    "dev:router": "lerna run dev --parallel --scope=vue-router",
+    "dev:tailwindcss": "lerna run dev --parallel --scope=vue-tailwindcss"
   },
   "keywords": [],
   "author": "",
